@@ -1,0 +1,56 @@
+important notations for machine learning:
+
+h = hypothesis
+m = number of training examples
+x = input variable/features
+y = output variable/target variable
+(x,y) = one training example
+(x (i), y (i)) = i-th training example (i is superscript)
+:= assignment
+= truth assertion
+α learning rate
+“𝛛” means partial derivative
+“𝓭” means derivative
+
+Hypothesis:
+h 𝛉(x) = 𝛉0 + 𝛉1 x
+
+Parameters:
+𝛉0, 𝛉1
+
+Cost Function:
+J(𝛉0, 𝛉1) = 1/2m ∑ (i=1 to m) (h 𝛉(x^(i)) - y^(i))^2
+
+Goal:
+minimize J(𝛉0, 𝛉1)
+over 𝛉0, 𝛉1
+
+The first hypothesis is given as:
+
+h 𝛉(x) = 𝛉1 x
+𝛉0 = 0
+for fixed 𝛉1, this is a function of x
+
+Derivative: The slope of the line that is tangent to the function at certain point
+
+𝛉1 := 𝛉1 - α(𝓭/𝓭𝛉1)J(𝛉1)
+where alpha is the learning rate
+
+When the slope has a positive value:
+
+The derivative takes a positive value
+𝛉1 := 𝛉1 - α(positive number)
+We are going to decrease 𝛉1 to get closer to the minimum.
+
+When the slope has a negative value:
+
+The derivate is negative
+𝛉1 := 𝛉1 - α(negative number)
+
+When α is too small, gradient descent can be slow:
+𝛉1 := 𝛉1 - α(𝓭/𝓭𝛉1)J(𝛉1)
+When α is small, the derivative multiplies with a small number
+
+When α is too large, gradient descent can overshoot the minimum:
+𝛉1 := 𝛉1 - α(𝓭/𝓭𝛉1)J(𝛉1)
+If 𝛉 is close to the minimum and α is too big, it can fail to converge or diverge.
