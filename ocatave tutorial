@@ -1,0 +1,40 @@
+Basic operations:
+
+xor(1,0)- find xor of the two given values
+(comparison)1 == 2 - will return 0 as 1 is not equal to 2
+(comparison) 1~=2 - 1 is not equal to 2
+AND- 1 && 0
+OR- 1 || 0
+
+variables:
+
+ex.: a=4;   if i put semicolon it will not print, just assign but if i dont put the semicolon it will print 
+
+disp(): for printing 
+
+sprintf():
+ex. a=3.14;
+    disp(sprintf('2 decimels: %0.2f',a))
+>>2 decimels: 3.14
+
+format long, format long are data types for printing the long and short values of the variables
+
+
+How to generate a matrix?
+A=[1 2;3 4;5 6;7 8]
+
+
+How to generate a vector?
+V=[1;2;3]
+
+How to generate a matrix of only 1s of 2X3 dimension?
+ones(2,3)
+
+how to print a matrix of random numbers?
+rand(1,3)/randn(1,3)
+
+plot a histogam:  hist()
+
+how to print a 4X4 identity matrix:
+eye(4)
+
