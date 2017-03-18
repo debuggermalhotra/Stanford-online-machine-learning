@@ -14,7 +14,9 @@ J = 0;
 %               You should set J to the cost.
 
 
-
+h=X*theta;  %hypothesis function (theta'*x=theta_0+theta_1*x1)
+squaredErrors=(h-y).^2;
+J=(1/(2*m))*sum(squaredErrors);
 
 
 % =========================================================================
