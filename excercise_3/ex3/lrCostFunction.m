@@ -37,11 +37,11 @@ grad = zeros(size(theta));
 %
 %vectorizing the cost func.
 htheta=sigmoid(X*theta); %z=X*theta
-J=1/m*sum(-y .* log(htheta) - (1-y) .* log(1-htheta))
+J=1/m*sum(-y .* log(htheta) - (1-y) .* log(1-htheta)) + lambda/(2*m) * sum(theta(2:end) .^ 2);
 temp=theta;
 temp(1)=0;
 %vectorizing the gradient descent
-grad=1/m * sum(X'(htheta-y));
+grad=1/m * (X' * (htheta-y) + lambda*temp);
 
 
 
