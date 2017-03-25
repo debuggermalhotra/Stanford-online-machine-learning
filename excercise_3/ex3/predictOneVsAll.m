@@ -29,7 +29,10 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
 %       
+%training each row for all classes and keeping the label whose probability is highest of all
 
+htheta=X*all_theta';
+[temp, p]=max(htheta, [] ,2);
 
 
 
