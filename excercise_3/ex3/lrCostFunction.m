@@ -35,11 +35,13 @@ grad = zeros(size(theta));
 %           temp(1) = 0;   % because we don't add anything for j = 0  
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
-
+%vectorizing the cost func.
 htheta=sigmoid(X*theta); %z=X*theta
 J=1/m*sum(-y .* log(htheta) - (1-y) .* log(1-htheta))
 temp=theta;
 temp(1)=0;
+%vectorizing the gradient descent
+grad=1/m * sum(X'(htheta-y));
 
 
 
