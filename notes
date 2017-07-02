@@ -54,3 +54,5 @@ When α is small, the derivative multiplies with a small number
 When α is too large, gradient descent can overshoot the minimum:
 𝛉1 := 𝛉1 - α(𝓭/𝓭𝛉1)J(𝛉1)
 If 𝛉 is close to the minimum and α is too big, it can fail to converge or diverge.
+
+Reading images: imread(‘img.png’);
