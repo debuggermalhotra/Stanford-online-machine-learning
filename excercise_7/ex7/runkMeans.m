@@ -61,4 +61,3 @@ if plot_progress
 end
 
 end
-

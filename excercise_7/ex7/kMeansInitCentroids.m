@@ -14,7 +14,10 @@ centroids = zeros(K, size(X, 2));
 %
 
 
-
+%Randomly reorder the indices of examples
+randindx = randperm(size(X,1));
+%Take the first K samples as centroids
+centroids=X(randx(1:K), :);
 
 
 
