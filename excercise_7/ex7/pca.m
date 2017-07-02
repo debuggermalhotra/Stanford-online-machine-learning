@@ -21,7 +21,9 @@ S = zeros(n);
 %
 
 Sigma = 1/m*X' * X;
-[U,S,V]=svd(Sigma);
+[U,S,V]=svd(Sigma); #svd() returns the singular values of matrix A in descending order.
+#example
+
 
 
 
