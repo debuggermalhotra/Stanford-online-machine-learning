@@ -1,6 +1,6 @@
 Basic operations:
 
-comment in octave: %
+comments in octave: %
 xor(1,0)- find xor of the two given values
 (comparison)1 == 2 - will return 0 as 1 is not equal to 2
 (comparison) 1~=2 - 1 is not equal to 2
