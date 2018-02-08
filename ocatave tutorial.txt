@@ -1,4 +1,4 @@
-Basic operations
+Basic operations:
 
 comments in octave: %
 xor(1,0)- find xor of the two given values
